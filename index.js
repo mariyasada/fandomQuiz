@@ -1,14 +1,21 @@
+// THIS QUIZ IS BASED ON HARRY POTTER 
+
 var readlineSync = require("readline-sync");
 var chalk= require("chalk");
 
 var score =0;
+
+function welcome(){
 var userName = readlineSync.question("what is your Name?");
 console.log(chalk.magenta("welcome!  " + userName + "   to DO YOU KNOW MARIYA?"));
+}
 
+console.log("------------------------------");
 
 function play(question,answer)
 {
   var userAnswer = readlineSync.question(question);
+
   if(userAnswer===answer)
   {
     console.log(chalk.green("right!"));
