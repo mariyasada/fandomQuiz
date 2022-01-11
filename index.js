@@ -5,14 +5,17 @@ var chalk= require("chalk");
 
 var score =0;
 
-function welcome(){
+// converting code into Es6 code 
+const welcome=()=>
+{
 var userName = readlineSync.question("what is your Name?");
 console.log(chalk.magenta("welcome!  " + userName + "   to DO YOU KNOW MARIYA?"));
 }
 
 console.log("------------------------------");
 
-function play(question,answer)
+// convertion code into Es6 code 
+const play = (question,answer)=>
 {
   var userAnswer = readlineSync.question(question);
 
